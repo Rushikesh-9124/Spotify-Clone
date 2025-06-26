@@ -9,7 +9,7 @@ const Navbar = () => {
     const Navigation = useNavigate()
     const {track} = useContext(PlayerContext)
     const {id} = useParams()
-    const path = ['/', `/music/${id ? '': 0}`,'/podcast']
+    const path = ['/', `/music/${id ? id : 0}`,'/podcast']
   return (
     <>
       <div className="w-full flex justify-between items-center font-semibold">
